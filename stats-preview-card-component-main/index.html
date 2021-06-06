@@ -13,7 +13,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-left: 300px; color:hsl(233, 47%, 7%) }
     .attribution a { color: hsl(228, 45%, 44%); }
     :root{
       --mainbg:hsl(233, 47%, 7%);
@@ -34,7 +34,8 @@
     }
   
     body{
-      background-color: var(--mainbg);
+      background-color: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+      
       width: 80%;
       height: 100%;
       font-family: var(--font1);
@@ -46,8 +47,8 @@
       width: 900px;
       height: 400px;
       position: absolute;
-      left:200px;
-      top: 100px;
+      left:330px;
+      top: 200px;
       bottom:100px;
       display: grid;
       grid-template-columns: 50% 50%;
@@ -55,6 +56,13 @@
       border-radius: 10px;
       overflow: hidden;
       margin:0 auto 0 auto;
+      transition: all .2s ease-in-out;
+    }
+
+    .container:hover{
+      
+      box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+      transform: scale(1.1);
     }
   
    .container2{
@@ -116,8 +124,8 @@
   </style>
 </head>
 <body>
-  <body>
     <div class="container">
+
       <div class="container2">
        <div><h2>Get <span class="ins">insights</span> that help your business grow.</h2> </div>
        <div><p class="diss">Discover the benefits of data analytics and make better decisions regarding revenue,customer experience,and overall efficiency. </p></div>
@@ -128,21 +136,17 @@
        </div>
        
       </div>
+
       <div class="img">
         <div><img width="450px" height="450px" src="images/image-header-desktop.jpg" alt="img"> </div>
-        
-      
       </div>
       
     </div>
-    
-    </body>
 
-  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">S. Thamer</a>.
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">S. Thamer</a>.
-  </div>
 </body>
 </html>
