@@ -1,381 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
 
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+  <!-- css rules to specify families
+  font-family: 'Overpass', sans-serif; -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- css rules to specify families
+  font-family: 'Ubuntu', sans-serif; -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    :root{
-      --maintext:hsl(0, 0%, 100%);
-      --footertext:hsl(240, 2%, 79%);
-      --bodycp:hsl(207, 13%, 34%);
-      --footerbg:hsl(240, 10%, 16%);
-      --mainbg:hsl(233, 47%, 7%);
-      --mainhd:hsl(208, 49%, 24%) ;/* main heading and stats */
-      --ctahoverbg:hsl(355, 100%, 74%);
-      --ctatext:hsl(356, 100%, 66%);
-      --introbg:linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-      --bodybg:linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%)); 
+  <!-- style -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/main.css">
 
-      --mainp: hsla(0, 0%, 100%, 0.75);
-      --stath: hsla(0, 0%, 100%, 0.6);
-      --font2:  'Overpass', sans-serif;
-      --font1:'Ubuntu', sans-serif;
-    }
-
-    *{
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      
-    }
-
-    html {
-      margin: 0px;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-
-   }
-   
-   body {
-      margin: 0px;
-      min-height: 100%;
-      max-width: 100%;
-      overflow: hidden;
-
-   }
-
- 
-
-    .intro {
-    background:  url(./images/bg-pattern-intro.svg), var(--introbg);
-    background-size: cover;
-    background-position: left;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 500px;
-    border-bottom-left-radius: 100px;
-    direction: flex;
-    flex-direction: column;
-    }
-
-    .navbar{
-    
-    display: flex;
-    flex-direction:row;
-    overflow: hidden;
-
-    margin: 0px 0 80px 100px;
-
-    }
-
-    .navbar img{
-      margin: 40px 0 80px 160px;
-      width: 60px;
-    }
-    .navbar-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      list-style-type: none;
-      margin: 55px 0px 0px 20px;
-    }
-
-    .dropbtn {
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-      }
-
-      .arrow-down {
-        border: solid rgb(255, 255, 255);
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        margin: -1px 1px 2px 1px;
-        padding: 2px;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-      }
-      .arrow-down:hover {
-       
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-      }
-      
-      .dropdown {
-      color: hsl(0, 0%, 100%);
-      margin: 0px 0px 8px 40px;
-      font-family: var(--font2);
-      font-weight:500;
-      height:20px;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-
-  
-      .dropdown-content a:hover {background-color: #f1f1f1}
-
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-      
-      .dropdown:hover .dropbtn {
-        background-color: var(--ctahoverbg);
-      }
-
-      .btn-lg {
-        height: 35px;
-        width:90px;
-        margin: 48px 0 80px 300px;
-        border: none;
-        color:white;
-        background-color: transparent;
-        font-family: var(--font2);
-        font-weight:600;
-      }
-      .btn-lg:hover {
-
-        color: hsl(356, 100%, 66%);
-        background-color:white;
-        cursor: pointer;
-        border-radius: 25px;
-        border:none;
-      }
-
-      .btn-sg {
-        height: 35px;
-        width:90px;
-        margin: 48px 0 80px 30px;
-        font-family: var(--font2);
-        font-weight:600;
-        color: hsl(356, 100%, 66%);
-        background-color:white;
-        border-radius: 25px;
-        border:none;
-      }
-      .btn-sg:hover {
-
-        background-color: hsl(356, 100%, 66%);
-        color:white;
-        cursor: pointer;
-
-      }
-
-    /* Header intro */
-    .intro-header {
-      color:white;
-      font-family: var(--font2);
-      font-weight: 700;
-      position: relative;
-      font-size: 52px;
-      width: 800px;
-      left: 33%;
-      margin: -80px 0 0px -70px;
-      word-spacing: 8px;
-    }
-
-    .sub-intro{
-      color:white;
-      font-family: var(--font2);
-      font-weight: 300;
-      position: relative;
-      font-size: 18px;
-      width: 800px;
-      left: 39%;
-      margin: 5px 0px 0px -0px;
-    }
-
-     .btns{
-      position: relative;
-      left: 44%;
-      margin: 80px 0px 0px -0px;
-     }
-    .btn-free {
-      border:none;
-      border-radius: 25px;
-      color :hsl(356, 100%, 66%);
-      background-color:white;
-      height: 30px;
-      width: 95px;
-      cursor: pointer;
-      font-family: var(--font2);
-      font-weight: 700;
-      margin-right: 5px;
-    }
-    .btn-free:hover{
-      background-color :hsl(356, 100%, 66%);
-      color:white;
-      transition: transform 200ms linear;
-    }
-
-    .btn-learn{
-      border:none;
-      border-radius: 25px;
-      background-color :hsl(356, 100%, 66%);
-      color:white;
-      height: 30px;
-      width: 90px;
-      cursor: pointer;
-      font-family: var(--font2);
-      font-weight: 700;
-    }
-    .btn-learn:hover{
-      color :hsl(356, 100%, 66%);
-      background-color:white;
-    }
-
-  </style>
+  <title>test</title>
 </head>
+
 <body>
-  <div class="intro">
-    <!-- navigation -->
+  <!-- class of pixelperfect -->
+  <!-- <div class="pixel"> -->
+  <div class="header">
+    <div class="responsive_menu" id="mobile_menu">
+      <a class="logo" href="#"><img src="images/logo.svg" width="100" height="100" alt="Blogr"></a>
+      <!-- change navbar link to example  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown -->
+      <div class="white_zone">
+        <div class="dropdown" id="productDropDown">
+          <button onclick="productShowMenu()" class="dropbtn">Product
+            <i class="icon"></i>
+          </button>
+          <div class="dropdown_content">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integrations</a>
+          </div>
+        </div>
 
-    <div class="navbar">
-      <img src="./images/logo.svg" alt="intro" width="48" height="48">
-      
-      <ul class="navbar-list">
-          <li class="dropdown">
-            <a class="dropbtn">Product <i class="arrow-down"></i></a>
-            <div class="dropdown-content">
-              <a href="#">Overview</a>
-              <a href="#">Pricing</a>
-              <a href="#">Marketplace</a>
-              <a href="">Features</a>
-              <a href="">Integrations</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a class="dropbtn">Company<i class="arrow-down"></i></a>
-            <div class="dropdown-content">
-              <a href="#">About</a>
-              <a href="#">Team</a>
-              <a href="#">Blog</a>
-              <a href="">Careers</a>
-              <a href="">Integrations</a>
-            </div>
-          </li>
-  
-          <li class="dropdown">
-            <a class="dropbtn">Connect<i class="arrow-down"></i></a>
-            <div class="dropdown-content">
-              <a href="#">Contact</a>
-              <a href="#">Newsletter</a>
-              <a href="">LinkedIn</a>
-            </div>
-          </li>
+        <div class="dropdown" id="companyDropDown">
+          <button onclick="companyShowMenu()" class="dropbtn">Company
+            <i class="icon"></i>
+          </button>
+          <div class="dropdown_content">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
+
+        <div class="dropdown" id="connectDropDown">
+          <button onclick="connectShowMenu()" class="dropbtn">Connect
+            <i class="icon"></i>
+          </button>
+          <div class="dropdown_content">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">Linkedln</a>
+          </div>
+        </div>
+
+        <!-- add line breakier when css stialize -->
+        <div class="connect_buttons">
+          <a class="login" href="#">Login</a>
+          <a class="sign" href="#">Sign Up</a>
+        </div>
+      </div>
+      <a class="humburger" href="javascript:void(0)">
+        <img src="images/icon-hamburger.svg" alt="icon" onclick="changeFunction()" id=menu_button>
+      </a>
+    </div>
+    <div class="headerContent">
+      <h1>A modern<br> publishing platform</h1>
+      <p>Grow your audience and build your<br>online brand</p>
+      <button class="free" type="button" name="button">Start for Free</button>
+      <button class="learn" type="button" name="button">Learn More</button>
+    </div>
+  </div>
+  <div class="section1">
+    <h2>Designed for the future</h2>
+    <!-- change size of svg when css -->
+    <img class="illustration-editor-desktop" src="images/illustration-editor-desktop.svg" alt="illustration">
+    <img class="illustration-editor-mobile" src="images/illustration-editor-mobile.svg" alt="illustration">
+    <h3>Introducing an<br> extensible editor</h3>
+    <p>Blogr features an exceedingly intuitive<br> interface which lets you focus
+      on one<br> thing: creating content. The editor<br> supports management
+      of multiple blogs<br> and allows easy manipulation of embeds<br> such as imges,
+      videos, and Markdown.<br> Extensibility with plugins and themes<br> provide
+      easy ways to add functionality or<br> change the looks of a blog.</p>
+    <h3 class="nice_margins">Robust content<br> management</h3>
+    <p class="move_bottom">Flexible content management enables<br>users to easily move through posts.<br>
+      Increase the usability of your blog by<br>adding customized categories, sections,<br>format
+      ,or flow. With this functionality,<br>you're in full control.</p>
+    <!-- add 2 images to after when css -->
+  </div>
+  <div class="section2">
+    <div class="section2-controlled-width">
+      <h2>State of the Art<br> Infrastructure</h2>
+      <p>With reliability and speed in mind,<br> worldwide data centers provide the<br>
+        backbone for ultra-fast connectivity. This<br> ensures your site will load instantly,
+        no<br> matter where your readers are, keeping<br> your site competitive.</p>
+    </div>
+  </div>
+  <div class="section3">
+    <img class="illustration-laptop-mobile" src="images/illustration-laptop-mobile.svg" alt="laptop">
+    <img class="illustration-laptop-desktop" src="images/illustration-laptop-desktop.svg" alt="laptop">
+    <div class="section3-controlled-width">
+      <h3>Free, open, simple</h3>
+      <p>Blogr is a free and open source<br> application backed by a large
+        community<br> of helpful developers. It supports features<br> such as code syntax
+        highlighting, RSS<br> feeds, social media integration, third-<br>party commenting tools, and works<br> seamlessly with Google Analytics.
+        The<br> architecture is clean and is relatively easy<br> to learn.</p>
+      <h3>Powerful tooling</h3>
+      <p>Batteries included. We built a simple and<br> straightforward CLI tool that makes<br>
+        customization and deployment a breeze,<br> but capable of producing even the most<br> complicated sites.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <a class="logo_footer" href="#"><img src="images/logo.svg" alt="Blogr"></a>
+    <ul class="move_footer">
+      <li class="footer_first_block block"><a class="li_big" style=" font-size: 18px;" href="#">Product</a>
+        <ul class="footer_content">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
         </ul>
-  
-        <button class="btn-lg">
-            Login
-        </button>
-        
-        <button class="btn-sg">
-          Sign up
-        </button>
-  
-    </div>
-
-    <!-- Intro -->
-    <h1 class="intro-header">
-      A modern publishing platform
-    </h1>
-    <h5 class="sub-intro">
-      Grow your audience and build your online brand
-    </h5>
-    <div class= 'btns'>
-      <button class="btn-free">
-        Start for Free
-      </button>
-      
-      <button class="btn-learn">
-        Learn more
-      </button>
-    </div>
- 
+      </li>
+      <li class="block"><a class="li_big" style="font-size: 18px;" href="#">Company</a>
+        <ul class="footer_content">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </li>
+      <li class="block"><a class="li_big" style=" font-size: 18px;" href="#">Connect</a>
+        <ul class="footer_content">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Linkedln</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- </div> -->
+  <script src="js/main.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
 </body>
+
 </html>
