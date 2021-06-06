@@ -34,11 +34,16 @@
       --font1:'Ubuntu', sans-serif;
     }
 
-    body { 
-      background-image: white;
+    *{
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      
     }
 
-    .navbar{
+ 
+
+    .intro {
     background:  url(./images/bg-pattern-intro.svg), var(--introbg);
     background-size: cover;
     background-position: left;
@@ -46,16 +51,23 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 500px;
-    margin:0;
     border-bottom-left-radius: 100px;
+    direction: flex;
+    flex-direction: column;
+    }
+
+    .navbar{
+    
     display: flex;
     flex-direction:row;
     overflow: hidden;
 
+    margin: 0px 0 80px 100px;
+
     }
 
     .navbar img{
-      margin: 40px 0 80px 140px;
+      margin: 40px 0 80px 160px;
     }
     .navbar-list {
       display: flex;
@@ -71,6 +83,21 @@
         font-size: 16px;
         border: none;
         cursor: pointer;
+      }
+
+      .arrow-down {
+        border: solid rgb(255, 255, 255);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        margin: -1px 1px 2px 1px;
+        padding: 2px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+      .arrow-down:hover {
+       
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
       }
       
       .dropdown {
@@ -112,84 +139,175 @@
       }
 
       .btn-lg {
-        height: 30px;
-        width:80px;
-        margin: 47px 0 80px 500px;
+        height: 35px;
+        width:90px;
+        margin: 45px 0 80px 300px;
         border: none;
         color:white;
         background-color: transparent;
         font-family: var(--font2);
         font-weight:500;
+      }
+      .btn-lg:hover {
 
-
+        color: hsl(356, 100%, 66%);
+        background-color:white;
+        cursor: pointer;
+        border-radius: 25px;
+        border:none;
       }
 
       .btn-sg {
-        height: 30px;
-        width:80px;
-        margin: 47px 0 80px 30px;
+        height: 35px;
+        width:90px;
+        margin: 44px 0 80px 30px;
         font-family: var(--font2);
         font-weight:500;
-
-        
+        color: hsl(356, 100%, 66%);
+        background-color:white;
+        border-radius: 25px;
+        border:none;
       }
+      .btn-sg:hover {
+
+        background-color: hsl(356, 100%, 66%);
+        color:white;
+        cursor: pointer;
+
+      }
+
+    /* Header intro */
+    .intro-header {
+      color:white;
+      font-family: var(--font2);
+      font-weight: 700;
+      position: relative;
+      font-size: 52px;
+      width: 800px;
+      left: 32%;
+      margin: -80px 0 0px -70px;
+      word-spacing: 8px;
+    }
+
+    .sub-intro{
+      color:white;
+      font-family: var(--font2);
+      font-weight: 300;
+      position: relative;
+      font-size: 18px;
+      width: 800px;
+      left: 38%;
+      margin: 5px 0px 0px -0px;
+    }
+
+     .btns{
+      position: relative;
+      left: 43%;
+      margin: 80px 0px 0px -0px;
+     }
+    .btn-free {
+      border:none;
+      border-radius: 25px;
+      color :hsl(356, 100%, 66%);
+      background-color:white;
+      height: 30px;
+      width: 95px;
+      cursor: pointer;
+      font-family: var(--font2);
+      font-weight: 700;
+      margin-right: 5px;
+    }
+    .btn-free:hover{
+      background-color :hsl(356, 100%, 66%);
+      color:white;
+      transition: transform 200ms linear;
+    }
+
+    .btn-learn{
+      border:none;
+      border-radius: 25px;
+      background-color :hsl(356, 100%, 66%);
+      color:white;
+      height: 30px;
+      width: 90px;
+      cursor: pointer;
+      font-family: var(--font2);
+      font-weight: 700;
+    }
+    .btn-learn:hover{
+      color :hsl(356, 100%, 66%);
+      background-color:white;
+    }
 
   </style>
 </head>
 <body>
+  <div class="intro">
+    <!-- navigation -->
+
+    <div class="navbar">
+      <img src="./images/logo.svg" alt="intro" width="48" height="48">
+      
+      <ul class="navbar-list">
+          <li class="dropdown">
+            <a class="dropbtn">Product <i class="arrow-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="">Features</a>
+              <a href="">Integrations</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a class="dropbtn">Company<i class="arrow-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="">Careers</a>
+              <a href="">Integrations</a>
+            </div>
+          </li>
   
-  <div class="navbar">
-    <img src="./images/logo.svg" alt="intro" width="48" height="48">
-    
-    <ul class="navbar-list">
-        <li class="dropdown">
-          <a class="dropbtn">Product</a>
-          <div class="dropdown-content">
-            <a href="#">Overview</a>
-            <a href="#">Pricing</a>
-            <a href="#">Marketplace</a>
-            <a href="">Features</a>
-            <a href="">Integrations</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a class="dropbtn">Company</a>
-          <div class="dropdown-content">
-            <a href="#">About</a>
-            <a href="#">Team</a>
-            <a href="#">Blog</a>
-            <a href="">Careers</a>
-            <a href="">Integrations</a>
-          </div>
-        </li>
+          <li class="dropdown">
+            <a class="dropbtn">Connect<i class="arrow-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="">LinkedIn</a>
+            </div>
+          </li>
+        </ul>
+  
+        <button class="btn-lg">
+            Login
+        </button>
+        
+        <button class="btn-sg">
+          Sign up
+        </button>
+  
+    </div>
 
-        <li class="dropdown">
-          <a class="dropbtn">Connect</a>
-          <div class="dropdown-content">
-            <a href="#">Contact</a>
-            <a href="#">Newsletter</a>
-            <a href="">LinkedIn</a>
-          </div>
-        </li>
-      </ul>
-
-      <button class="btn-lg">
-          Login
+    <!-- Intro -->
+    <h1 class="intro-header">
+      A modern publishing platform
+    </h1>
+    <h5 class="sub-intro">
+      Grow your audience and build your online brand
+    </h5>
+    <div class= 'btns'>
+      <button class="btn-free">
+        Start for Free
       </button>
       
-      <button class="btn-sg">
-        Sign up
+      <button class="btn-learn">
+        Learn more
       </button>
-
+    </div>
+ 
   </div>
-
-  
-  Login
-  Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
   Start for Free
   Learn More
 
@@ -238,7 +356,6 @@
   Contact
   Newsletter
   LinkedIn
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
