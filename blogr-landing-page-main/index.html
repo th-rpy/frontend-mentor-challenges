@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    :root{
+      --maintext:hsl(0, 0%, 100%);
+      --footertext:hsl(240, 2%, 79%);
+      --bodycp:hsl(207, 13%, 34%);
+      --footerbg:hsl(240, 10%, 16%);
+      --mainbg:hsl(233, 47%, 7%);
+      --mainhd:hsl(208, 49%, 24%) ;/* main heading and stats */
+      --ctahoverbg:hsl(355, 100%, 74%);
+      --ctatext:hsl(356, 100%, 66%);
+      --introbg:linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+      --bodybg:linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%)); 
+
+      --mainp: hsla(0, 0%, 100%, 0.75);
+      --stath: hsla(0, 0%, 100%, 0.6);
+      --font2:  'Overpass', sans-serif;
+      --font1:'Ubuntu', sans-serif;
+    }
+
+    body { 
+      background-image: white;
+    }
+
+    .navbar{
+    background:  url(./images/bg-pattern-intro.svg), var(--introbg);
+    background-size: cover;
+    background-position: left;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin:0;
+    border-bottom-left-radius: 100px;
+    display: flex;
+    flex-direction:row;
+    overflow: hidden;
+
+    }
+
+    .navbar img{
+      margin: 40px 0 80px 140px;
+    }
+    .navbar-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      list-style-type: none;
+      margin: 55px 0px 0px 20px;
+    }
+
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+      color: hsl(0, 0%, 100%);
+      margin: 0px 0px 8px 40px;
+      font-family: var(--font2);
+      font-weight:500;
+      height:20px;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+  
+      .dropdown-content a:hover {background-color: #f1f1f1}
+
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+
+      
+      .dropdown:hover .dropbtn {
+        background-color: var(--ctahoverbg);
+      }
+
+      .btn-lg {
+        height: 30px;
+        width:80px;
+        margin: 47px 0 80px 500px;
+        border: none;
+        color:white;
+        background-color: transparent;
+        font-family: var(--font2);
+        font-weight:500;
+
+
+      }
+
+      .btn-sg {
+        height: 30px;
+        width:80px;
+        margin: 47px 0 80px 30px;
+        font-family: var(--font2);
+        font-weight:500;
+
+        
+      }
+
+  </style>
+</head>
+<body>
+  
+  <div class="navbar">
+    <img src="./images/logo.svg" alt="intro" width="48" height="48">
+    
+    <ul class="navbar-list">
+        <li class="dropdown">
+          <a class="dropbtn">Product</a>
+          <div class="dropdown-content">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="">Features</a>
+            <a href="">Integrations</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn">Company</a>
+          <div class="dropdown-content">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="">Careers</a>
+            <a href="">Integrations</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropbtn">Connect</a>
+          <div class="dropdown-content">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="">LinkedIn</a>
+          </div>
+        </li>
+      </ul>
+
+      <button class="btn-lg">
+          Login
+      </button>
+      
+      <button class="btn-sg">
+        Sign up
+      </button>
+
+  </div>
+
+  
+  Login
+  Sign Up
+
+  A modern publishing platform
+  Grow your audience and build your online brand
+
+  Start for Free
+  Learn More
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
