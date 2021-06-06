@@ -1,4 +1,5 @@
 # frontend-mentor-challenges
 Frontend mentor challenges solutions
 
-1. Prject 1 : [Demo](https://frontend-mentor-challenges-lime.vercel.app/)
+1. Stat preview card : [Demo](https://frontend-mentor-challenges-lime.vercel.app/)
+2. 
