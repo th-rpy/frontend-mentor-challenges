@@ -1,9 +1,16 @@
 // Select reward..
 let value = 50000;
 let bracket = 10;
-const days = 64;
 let v = 0;
 let enter  = 0; 
+
+const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+const firstDate = new Date(2021, 6, 8);
+const secondDate = new Date(2021, 8, 10);
+const thirdDate = new Date(2021, 9, 17);
+
+const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+const diffDays2 = Math.round(Math.abs((firstDate - thirdDate) / oneDay));
 
 const select_btn25 = document.querySelector('#btn-25');
 const select_btn75 = document.querySelector('#btn-75');
@@ -20,7 +27,12 @@ progress.style.width = '50%';
 const modal_success = document.querySelector('.modal-success');
 const select_modal = document.querySelector('.select-modal');
 const bookmark = document.querySelector('.bookmarck')
-
+const days = document.getElementsByName('days')[0];
+const days_25 = document.getElementsByName('day_25')[0];
+const days_75 = document.getElementsByName('day_75')[0];
+days.innerHTML = diffDays;
+days_75.innerHTML = diffDays;
+days_25.innerHTML = diffDays2;
 bookmark.addEventListener('click', () =>{
     bookmark.style.backgroundColor = '#3CBCAB90';
 })
