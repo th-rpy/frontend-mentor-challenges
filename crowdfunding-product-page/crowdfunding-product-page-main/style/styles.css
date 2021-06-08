@@ -183,3 +183,83 @@ body {
   font-family: 'Commissioner', sans-serif;
   font-weight: 700;
 }
+
+/* Section 3 Style */
+.section-3 {
+  height: 193px;
+  width: 730px;
+
+  margin-top: 20px;
+
+  border-radius: 5px;
+  background-color:#FFFFFF;
+  border: 1px solid #2f2f2f23;
+  position: relative;
+  left: 27%;
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.section-3 .info{
+  margin-top: 18px;
+  margin-left: 48px;
+
+  width: 670px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.section-3 .info h1{
+  font-size : 32px;
+  font-weight :700;
+  font-family: 'Commissioner', sans-serif;
+  color : #000000;
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+
+}
+
+.section-3 .info p{
+  font-size : 16px;
+  font-weight :300;
+  font-family: 'Commissioner', sans-serif;
+  color : #747474;
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+}
+
+.section-3 .info .line {
+  border-right: 1px solid #2f2f2f23;
+  height:64.2px;
+  width: 1px;
+  margin-top: 30px;
+  margin-left: -40px;
+}
+
+.section-3 .progress-bar {
+  height: 12px;
+  width: 600px;
+  margin-top: 18px;
+  margin-left: 88px;
+  background-color: #2f2f2f0c;
+  border-radius: 34px;
+  border: none;
+}
+
+.section-3 .green-bar{
+  height: 12px;
+  width: 500px;
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: #3CB3AB;
+  border-radius: 34px;
+  border: none;
+}
+
