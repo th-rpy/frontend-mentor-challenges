@@ -103,7 +103,7 @@
 
       <div class="footer-card">
          <p> <span>101</span> left</p>
-        <button class="btn-reward">Select Reward</button> 
+        <button >Select Reward</button> 
       </div>
       
      </div>
@@ -119,15 +119,15 @@
 
       <div class="footer-card">
          <p> <span>64</span> left</p>
-        <button class="btn-reward">Select Reward</button> 
+        <button >Select Reward</button> 
       </div>
       
      </div>
 
      <div class="card out-of-stock">
       <div class="card-header">
-        <h3>Pledge $200 or more</h3>
-        <h3 class = 'green'>Mahogany Special Edition</h3>
+        <h3>Mahogany Special Edition</h3>
+        <h3 class = 'green'>Pledge $200 or more</h3>
       </div> 
       
       <p>
@@ -137,25 +137,19 @@
 
       <div class="footer-card " >
          <p> <span>0</span> left</p>
-        <button class="btn-reward" disabled>Out of Stock</button> 
+        <button id ="inactive">Out of Stock</button> 
       </div>
       
      </div>
+
+     <!-- Section 4 End -->
   </div>
  
 
 
 
   
-  
 
-
-  Mahogany Special Edition
-  Pledge $200 or more
-  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
-  to our Backer member list. Shipping is included.
-  0 left
-  Out of Stock
 
   <!-- Selection modal start -->
 
@@ -205,11 +199,14 @@
   <!-- Selection modal end -->
 
   <!-- Success modal start -->
-
-  Thanks for your support!
-  Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-  an email once our campaign is completed.
-  Got it!
+  <div id = 'modal-success' class="modal-success" >
+    <img src="./images/icon-check.svg" alt="" height="64" width="64">
+    <h3>Thanks for your support!</h3>
+    <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+      an email once our campaign is completed.</p>
+    <button class="close">Got it!</button> 
+  </div>
+  
 
   <!-- Success modal end -->
 </body>
