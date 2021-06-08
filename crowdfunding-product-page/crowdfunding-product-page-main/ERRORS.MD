@@ -9,3 +9,7 @@
 
 1. Space between line in p tag : use line-height: 30px; [Done]
 2. Inactivate a div content : use pointer-events:none; [Done]
+
+# ------ Modal -----------
+
+1. Remove focus border (outline) around text/input boxes : input:focus{outline: none;} [Done]
