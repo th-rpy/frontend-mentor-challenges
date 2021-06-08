@@ -1,0 +1,47 @@
+/* import font family font-family: 'Commissioner', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+
+
+/* Html and body tag */
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    overflow-x: hidden;
+
+}
+
+body {
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    margin:0px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*Section 1 : Style */
+
+.section-1 {
+  background-image: url(../images/image-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Commissioner', sans-serif;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.section-1 img {
+  margin: 40px 0px 0px 180px;
+}
+
+.section-1 ul {
+  margin: 40px 0px 0px 800px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  list-style-type: none;
+}
