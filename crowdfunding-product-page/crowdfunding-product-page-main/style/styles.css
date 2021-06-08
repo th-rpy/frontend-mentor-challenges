@@ -613,6 +613,262 @@ body {
 	border-bottom-right-radius: 35px;
 }
 
+.select-modal{
+	/* Font & Text */
+	font-family: Commissioner, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 24px;
+	text-decoration: none solid rgb(122, 122, 122);
+	text-align: start;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgb(250, 250, 250);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(122, 122, 122);
+
+	/* Box */
+	height: 307.4px;
+	width: 732px;
+	border: 1px solid rgb(211, 211, 211);
+	border-top: 1px solid rgb(211, 211, 211);
+	border-right: 1px solid rgb(211, 211, 211);
+	border-bottom: 1px solid rgb(211, 211, 211);
+	border-left: 1px solid rgb(211, 211, 211);
+	margin: 27px;
+	padding: 10px 30px 30px;
+	max-height: none;
+	min-height: 0px;
+	max-width: 750px;
+	min-width: 0px;
+
+	/* Positioning */
+	position: fixed;
+	top: 360.8px;
+	bottom: 53.4px;
+	right: 9.6px;
+	left: 759.6px;
+	float: none;
+	clear: none;
+	z-index: 1000;
+
+	/* List */
+	list-style-image: none;
+	list-style-type: disc;
+	list-style-position: outside;
+
+	/* Table */
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	caption-side: top;
+	empty-cells: show;
+	table-layout: auto;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: auto;
+	visibility: visible;
+
+	/* Effects */
+	transform: matrix(1, 0, 0, 1, -374.8, -153.6);
+	transition: all 0s ease 0s;
+  outline-offset: 0px;
+	box-sizing: border-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: normal;
+	box-shadow: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+  display:none;
+}
+
+.close-span{
+	/* Font & Text */
+	font-family: Commissioner, sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	letter-spacing: normal;
+	line-height: 42px;
+	text-decoration: none solid rgb(60, 180, 172);
+	text-align: start;
+	text-indent: 0px;
+	text-transform: none;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(60, 180, 172);
+
+	/* Box */
+	height: 41.6px;
+	width: 26.2875px;
+	border: 0px none rgb(60, 180, 172);
+	border-top: 0px none rgb(60, 180, 172);
+	border-right: 0px none rgb(60, 180, 172);
+	border-bottom: 0px none rgb(60, 180, 172);
+	border-left: 0px none rgb(60, 180, 172);
+	margin: 0px 0px 10px 650px;
+	padding: 0px 10px 0px 0px;
+	max-height: none;
+	min-height: auto;
+	max-width: none;
+	min-width: auto;
+
+	/* Positioning */
+	position: static;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: auto;
+
+	/* List */
+	list-style-image: none;
+	list-style-type: disc;
+	list-style-position: outside;
+
+	/* Table */
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	caption-side: top;
+	empty-cells: show;
+	table-layout: auto;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: pointer;
+	visibility: visible;
+
+	/* Effects */
+	transform: none;
+	transition: all 0s ease 0s;
+	outline-offset: 0px;
+	box-sizing: border-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: normal;
+	box-shadow: none;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.reward-div{
+	/* Font & Text */
+	font-family: Commissioner, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 24px;
+	text-decoration: none solid rgb(122, 122, 122);
+	text-align: start;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(122, 122, 122);
+
+	/* Box */
+	height: 213.8px;
+	width: 619.2px;
+	border: 2px solid rgb(60, 180, 172);
+	border-top: 2px solid rgb(60, 180, 172);
+	border-right: 2px solid rgb(60, 180, 172);
+	border-bottom: 2px solid rgb(60, 180, 172);
+	border-left: 2px solid rgb(60, 180, 172);
+	margin: 0px 10px 20px 20px;
+	padding: 0px;
+	max-height: none;
+	min-height: auto;
+	max-width: 700px;
+	min-width: auto;
+
+	/* Positioning */
+	position: static;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: grid;
+	clear: none;
+	z-index: auto;
+
+	/* List */
+	list-style-image: none;
+	list-style-type: disc;
+	list-style-position: outside;
+
+	/* Table */
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	caption-side: top;
+	empty-cells: show;
+	table-layout: auto;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: auto;
+	visibility: visible;
+
+	/* Effects */
+	transform: none;
+	transition: all 0s ease 0s;
+	outline-offset: 0px;
+	box-sizing: border-box;
+	resize: none;
+	text-shadow: none;
+	text-overflow: clip;
+	word-wrap: normal;
+	box-shadow: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.reward-div .inf-div{
+  display: flex;
+  flex-direction: row;
+}
+
 
 
 
