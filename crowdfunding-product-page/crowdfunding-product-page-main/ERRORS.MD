@@ -8,3 +8,4 @@
 # ------Section 4 --------
 
 1. Space between line in p tag : use line-height: 30px; [Done]
+2. Inactivate a div content : use pointer-events:none; [Done]

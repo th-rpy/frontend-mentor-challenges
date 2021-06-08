@@ -330,6 +330,14 @@ body {
 
 }
 
+.out-of-stock{
+  pointer-events: none;
+
+  /* for "disabled" effect */
+  opacity: 0.3;
+  background: #CCC;
+}
+
 .section-4 .card .card-header{
   display: flex;
   flex-direction: row;
@@ -382,9 +390,8 @@ body {
   margin-left: 0px;
   margin-top: 10px;
   height: 68.4px;
-  width: 550px;
+  width: 600px;
 }
-
 
 .section-4 .card .footer-card span{
   color: black;
@@ -393,6 +400,26 @@ body {
   font-weight: 700;
 
 }
+
+.section-4 .card button{
+  width: 200px;
+  height: 48px;
+  background-color:  hsl(176, 50%, 47%) ;  /* #147A73;*/
+  border-radius: 34px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 500;
+  margin-left: -40px;
+  margin-top: -10px;
+}
+
+.section-4 button:hover{
+  background-color: #147A73;
+}
+
 
 
 
